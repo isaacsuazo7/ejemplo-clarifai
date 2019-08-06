@@ -1,0 +1,13 @@
+html
+  head
+    link(href="style.css", rel="stylesheet")
+    script(src="feedback.js")
+  body
+    img#img(src="data:image/png;base64," + image)
+    #id
+    each concept in concepts
+      p #{concept.name}: #{concept.value}
+    button(onclick="cacao()", class="label-button") cacao
+    button(onclick="chocolate()", class="label-button") chocolate
+    button(onclick="organico()", class="label-button") organico
+    a.label-button(href='http://localhost:3000') Next Image
